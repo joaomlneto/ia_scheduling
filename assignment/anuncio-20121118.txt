@@ -1,0 +1,5 @@
+A entrega da primeira parte do projecto é exclusivamente relativa ao código das procuras cegas.
+
+A entrega da segunda parte do projecto deve conter a parte relativa ao código das procuras heurísticas, do problema de satisfação de restrições e relatório.
+
+O custo que deve ser utilizado deve corresponder ao número de subtarefas distintas a desenvolver.

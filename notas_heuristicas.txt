@@ -1,0 +1,53 @@
+=> H1:
+* admissivel: sim
+* consistente: sim
+pseudocodigo:
+return 0
+
+=> H2:
+* admissivel: sim
+* consistente: sim
+pseudocodigo:
+devolver numero de tarefas que faltam atribuir alternativas
+
+=> H3:
+* admissivel: nao
+* consistente: nao
+pseudocodigo:
+para cada tarefa que falta atribur alternativas:
+	escolher uma das alternativas com numero minimo de subtarefas
+	juntar subtarefas ao conjunto de subtarefas do estado
+remover duplicados no conjunto total de subtarefas de todas as tarefas
+devolver tamanho da lista
+
+=> H4:
+* admissivel: nao
+* consistente: nao
+pseudocodigo:
+x = 0
+seguintes = '()
+para cada tarefa que falta atribuir alternativas:
+	escolher todas as alternativas dessa subtarefa
+	(N = numero de alternativas com numero minimo de subtarefas)
+	(C = custo de cada uma dessas alternativas)
+	x += (N-1) * C
+	seguintes = seguintes U [todas as subtarefas de todas as alternativas]
+devolver ([custo (estado U seguintes)] - [custo estado] - x)
+
+=> H5:
+* admissivel: sim
+* consistente: sim
+pseudocodigo:
+s(0) = lista de subtarefas no estado (inicial)
+custo-minimo = 0;
+para cada tarefa i (>=1) que falta atribuir alternativas:
+	s(i) = s(i-1)
+	custo-minimo-tarefa = +inf;
+	para cada alternativa j da tarefa i:
+   	sub(i,j) = subtarefas da alternativa j da tarefa i
+		sub-mais-estado(i,j) = sub(i,j) U s(i-1);
+		se custo(sub-mais-estado(i,j))-custo(s(i)) < custo-minimo-tarefa) então
+			custo-minimo-tarefa = sub-mais-estado(i,j) - custo(s(i-1));
+			s(i) = sub-mais-estado(i,j);
+	custo-minimo += custo-minimo-tarefa;
+devolver custo-minimo;

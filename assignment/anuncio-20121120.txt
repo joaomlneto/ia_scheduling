@@ -1,0 +1,5 @@
+Os algoritmos de procura descritos no livro referem a função solution, que toma como argumento um nó e que é chamada quando é encontrada uma solução. Esta função tem por objectivo descrever a solução encontrada a partir do nó que se sabe ser solução para o problema de procura (por exemplo, construir um caminho ou outra estrutura de informação com informação relevante calculada a partir do nó solução). Esta função é diferente da função que é valor do campo solucao? da estrutura problema, que recebe como argumento um estado e que reconhece soluções para o problema que está a ser resolvido.
+
+Todas as funções formulacao-problema (formulacao-problema, formulacao-problema1, etc) desenvolvidas devem ser entregues para serem objecto de avaliação automática*.
+
+* As funções formulacao-problema são para serem entregues na segunda entrega (* acrescentado a 22/11/2012).
