@@ -6,18 +6,19 @@ Project assignment for the Artificial Intelligence course @ IST 2012
 Simplified Scheduling problem in Common LISP.
 
 Problem:
-You must satisfy all tasks for a given list of tasks.
-There are several alternatives to satisfy a task - at least one must be satisfied.
-Each alternative is a set of subtasks.
-Different subtasks cannot be done at the same time.
+You must satisfy all tasks for a given list of tasks.  
+There are several alternatives to satisfy a task - at least one must be satisfied.  
+Each alternative is a set of subtasks.  
+Different subtasks cannot be done at the same time.  
 
 Subtasks (activities) have a start time:
  - Day, a positive integer
  - Hour, an integer between 0 and 23 (inclusive)
  - ID, an identifier.
-Tasks with the same identifier are assumed to be the same (if you do one of them, you do not need to do it again).
-Alternatives are a set of subtasks.
-Tasks are a set of alternatives.
+
+Tasks with the same identifier are assumed to be the same (if you do one of them, you do not need to do it again).  
+Alternatives are a set of subtasks.  
+Tasks are a set of alternatives.  
 
 Formulations:
 - Formulation A: the most efficient. Has a tree structure.
