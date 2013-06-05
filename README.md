@@ -11,7 +11,7 @@ There are several alternatives to satisfy a task - at least one must be satisfie
 Each alternative is a set of subtasks.  
 Different subtasks cannot be done at the same time.  
 
-Subtasks (activities) have a start time:
+Subtasks (activities) have a duration of 1 hour and are defined by:
  - Day, a positive integer
  - Hour, an integer between 0 and 23 (inclusive)
  - ID, an identifier.
